@@ -1,0 +1,20 @@
+{
+  "name": "npmjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack ./src/index.jsx --output-path ../wwwroot/js --output-filename index.bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "igniteui-webcomponents-core": "^4.3.1",
+    "igniteui-webcomponents-gauges": "^4.3.1"
+  }
+}
