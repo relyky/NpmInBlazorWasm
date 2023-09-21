@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack ./src/index.jsx --output-path ../wwwroot/js --output-filename index.bundle.js"
+    "build": "webpack ./src/index.jsx --output-path ../wwwroot/js --output-filename index.bundle.js",
+    "buildMap": "webpack ./src/myMap.jsx --output-path ../wwwroot/js --output-filename myMap.bundle.js --mode=development"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@syncfusion/ej2-maps": "^23.1.36",
     "igniteui-webcomponents-core": "^4.3.1",
     "igniteui-webcomponents-gauges": "^4.3.1"
   }

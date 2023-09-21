@@ -13,3 +13,4 @@ window.updateRgValue = function (value) {
   var rg = document.getElementById("rg");
   rg.value = value;
 }
+ 
