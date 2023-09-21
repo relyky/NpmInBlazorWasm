@@ -7,3 +7,9 @@ import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
 ModuleManager.register(
   IgcRadialGaugeModule
 );
+
+// 加入更新此元件函式
+window.updateRgValue = function (value) {
+  var rg = document.getElementById("rg");
+  rg.value = value;
+}

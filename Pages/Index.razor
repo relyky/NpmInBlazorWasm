@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IJSRuntime jsr
 
 <PageTitle>Index</PageTitle>
 
@@ -8,7 +9,7 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<igc-radial-gauge height="400px"
+<igc-radial-gauge id="rg" height="400px"
                   width="400px"
                   value="25"
                   interval="5"
@@ -27,3 +28,12 @@ Welcome to your new app.
                           brush="green">
   </igc-radial-gauge-range>
 </igc-radial-gauge>
+
+<button @onclick="HandleClick">Update Value</button>
+
+@code {
+  async void HandleClick()
+  {
+    await jsr.InvokeVoidAsync("updateRgValue", 60);
+  }
+}
